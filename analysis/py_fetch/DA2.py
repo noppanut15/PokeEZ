@@ -1,5 +1,6 @@
 """DA2:time"""
 import csv
+import json
 with open('extracted_data.csv', 'r') as csvfile:
     reader = csv.DictReader(csvfile)
     dict_ans = {}
@@ -18,4 +19,6 @@ with open('extracted_data.csv', 'r') as csvfile:
             dict_ans[i["pokemonId"]]["evening"] += 1
         elif i["appearedTimeOfDay"] == "night":
             dict_ans[i["pokemonId"]]["night"] += 1
-    print(dict_ans)
+
+with open('DA2.json', 'w') as f:
+    json.dump(dict_ans, f)
