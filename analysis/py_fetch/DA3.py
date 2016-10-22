@@ -11,7 +11,7 @@ collect spawning area of each pokemon then export to json format
 """
 import json as js
 import pandas as pd
-data = pd.read_csv('./data/extracted_data.csv').set_index('pokemonId')
+data = pd.read_csv('./PATH/TO/DATA.csv').set_index('pokemonId')
 json = {}
 for index, row in data.iterrows():
     key = str('%03d' % index)
