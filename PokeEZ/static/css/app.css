@@ -1,0 +1,179 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+/* Index Page
+-------------------------------------------------- */
+
+.title {
+  margin: 0 0 30px 0;
+}
+
+.add-padding {
+  padding: 10px 0;
+}
+.add-margin {
+  margin: 10px 0;
+}
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+  text-align: center;
+}
+
+.hcenter {
+  width: 100%;
+  margin: 0 auto;
+  float: none;
+}
+
+.row {
+  padding: 20px;
+}
+
+/* Pokedex Page
+-------------------------------------------------- */
+
+.id-label {
+  color: #bdc3c7;
+  margin-bottom: -10px;
+}
+
+.thumbnail-block {
+  background-color: #ECF0F1;
+}
+
+.thumbnail-badge {
+  background-color: #fff;
+}
+
+/* Pokedex Type
+-------------------------------------------------- */
+.background-color-bug {
+    background: #729f3f linear-gradient(180deg, #729f3f 50%, #729f3f 50%) repeat scroll 0 0;
+    color: #fff;
+}
+.background-color-dark {
+    background: #707070 linear-gradient(180deg, #707070 50%, #707070 50%) repeat scroll 0 0;
+    color: #fff;
+}
+.background-color-dragon {
+    background: #53a4cf linear-gradient(180deg, #53a4cf 50%, #f16e57 50%) repeat scroll 0 0;
+    color: #fff;
+}
+.background-color-electric {
+    background: #eed535 linear-gradient(180deg, #eed535 50%, #eed535 50%) repeat scroll 0 0;
+    color: #212121;
+}
+.background-color-fairy {
+    background: #fdb9e9 linear-gradient(180deg, #fdb9e9 50%, #fdb9e9 50%) repeat scroll 0 0;
+    color: #212121;
+}
+.background-color-fighting {
+    background: #d56723 linear-gradient(180deg, #d56723 50%, #d56723 50%) repeat scroll 0 0;
+    color: #fff;
+}
+.background-color-fire {
+    background: #fd7d24 linear-gradient(180deg, #fd7d24 50%, #fd7d24 50%) repeat scroll 0 0;
+    color: #fff;
+}
+.background-color-flying {
+    background: #3dc7ef linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%) repeat scroll 0 0;
+    color: #212121;
+}
+.background-color-ghost {
+    background: #7b62a3 linear-gradient(180deg, #7b62a3 50%, #7b62a3 50%) repeat scroll 0 0;
+    color: #fff;
+}
+.background-color-grass {
+    background: #9bcc50 linear-gradient(180deg, #9bcc50 50%, #9bcc50 50%) repeat scroll 0 0;
+    color: #212121;
+}
+.background-color-ground {
+    background: #f7de3f linear-gradient(180deg, #f7de3f 50%, #ab9842 50%) repeat scroll 0 0;
+    color: #212121;
+}
+.background-color-ice {
+    background: #51c4e7 linear-gradient(180deg, #51c4e7 50%, #51c4e7 50%) repeat scroll 0 0;
+    color: #212121;
+}
+.background-color-normal {
+    background: #a4acaf linear-gradient(180deg, #a4acaf 50%, #a4acaf 50%) repeat scroll 0 0;
+    color: #212121;
+}
+.background-color-poison {
+    background: #b97fc9 linear-gradient(180deg, #b97fc9 50%, #b97fc9 50%) repeat scroll 0 0;
+    color: #fff;
+}
+.background-color-psychic {
+    background: #f366b9 linear-gradient(180deg, #f366b9 50%, #f366b9 50%) repeat scroll 0 0;
+    color: #fff;
+}
+.background-color-rock {
+    background: #a38c21 linear-gradient(180deg, #a38c21 50%, #a38c21 50%) repeat scroll 0 0;
+    color: #fff;
+}
+.background-color-steel {
+    background: #9eb7b8 linear-gradient(180deg, #9eb7b8 50%, #9eb7b8 50%) repeat scroll 0 0;
+    color: #212121;
+}
+.background-color-water {
+    background: #4592c4 linear-gradient(180deg, #4592c4 50%, #4592c4 50%) repeat scroll 0 0;
+    color: #fff;
+}
+
+/* Main US Map
+-------------------------------------------------- */
+
+.states {
+  fill: none;
+  stroke: #fff;
+  stroke-linejoin: round;
+}
+
+.states-choropleth {
+  fill: #ccc;
+}
+
+#tooltip-container {
+  position: absolute;
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  border: 1px solid;
+  display: none;
+}
+
+.tooltip_key {
+  font-weight: bold;
+}
+
+.tooltip_value {
+  margin-left: 20px;
+  float: right;
+}
+.svg {
+
+    overflow-x: auto;
+    margin: -20px;
+}

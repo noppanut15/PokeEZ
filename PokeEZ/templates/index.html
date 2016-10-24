@@ -1,0 +1,36 @@
+{% load static %}
+{% include 'includes/header.html' %}
+{% include 'includes/navbar.html' %}
+
+<div class="container add-padding">
+	<div class="row">
+		<div class="col-xs-12 col-sm-4 vcenter">
+			<img src="{% static 'img/app/pika-welcome.png' %}" class="img-responsive">
+		</div><!--
+		--><div class="col-xs-12 col-sm-8 vcenter">
+				<div class="title">
+					<h1>Which Pokemon do you want ?</h1>
+				</div>
+				<form class="form-inline" action="/search-by-name/" method="post">
+                        {% csrf_token %}
+						<div class="input-group">
+							<div class="input-group-addon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></div>
+							<input type="text" class="form-control" name="pokename" id="pokename" placeholder="Pokemon's name">
+						</div>
+
+					<button type="submit" class="btn btn-primary add-margin">Gotta Catch'em All</button>
+				</form>
+				<div>
+					<p class="add-padding">Don't know the Pokemon name? Let's surf in our <a href="{% url 'pokedex' %}">Pokedex</a>.</p>
+				</div>
+		</div>
+	</div>
+</div>
+
+{% include 'includes/footer.html' %}
+
+<!-- Auto complete -->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" src="static/js/pokeauto-complete.js"></script>
+</body>
+</html>
