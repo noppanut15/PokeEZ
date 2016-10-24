@@ -1,0 +1,28 @@
+{% load static %}
+{% include 'includes/header.html' %}
+{% include 'includes/navbar.html' %}
+
+<div class="container">
+	<div class="row">
+    {% for id, info in infos %}
+	  <div class="col-sm-4 col-md-3">
+	    <div class="thumbnail thumbnail-block">
+	      <a href="{% url 'analytic:detail' id %}"><img src="/static/img/pokedex/thumbnail/{{id}}.png"></a>
+	      <div class="caption thumbnail-badge">
+	      	<p class="id-label"># {{ id }}</p>
+	        <h3>{{ info.0 }}</h3>
+            {% for type in info.1 %}
+	        <span class="label background-color-{{type|lower}}">{{type}}</span>
+            {% endfor %}
+	      </div>
+	    </div>
+	  </div>
+     {% endfor %}
+	</div>
+
+</div>
+
+{% include 'includes/footer.html' %}
+
+</body>
+</html>

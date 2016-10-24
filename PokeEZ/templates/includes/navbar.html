@@ -1,0 +1,19 @@
+<nav class="navbar navbar-inverse navbar-static-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-bar" aria-expanded="false">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/">PokeEZ</a>
+		</div>
+
+		<div class="collapse navbar-collapse" id="main-menu-bar">
+			<ul class="nav navbar-nav">
+				<li class="{{ nav_pokedex }}"><a href="{% url 'pokedex' %}">Pokedex</a></li>
+				<li class="{{ nav_about }}"><a href="{% url 'about' %}">About Us</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container -->
+</nav>

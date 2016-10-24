@@ -1,0 +1,84 @@
+{% load static %}
+{% include 'includes/header.html' %}
+{% include 'includes/navbar.html' %}
+<div class="container" style="padding-top: 20px;">
+	<div class="row">
+		<!-- Pokemon Info -->
+		<div class="col-md-3">
+			<div class="thumbnail thumbnail-block">
+            {% with 'img/pokedex/thumbnail/'|add:id|add:'.png' as pokeimage %}
+	      <a href="analytic.html"><img src="{% static pokeimage %}"></a>
+            {% endwith %}
+	      <div class="caption thumbnail-badge">
+	      	<p class="id-label"># {{id}}</p>
+	        <h3>{{pokedex_info.0}}</h3>
+            {% for type in pokedex_info.1 %}
+	           <span class="label background-color-{{type|lower}}">{{type}}</span>
+            {% endfor %}
+	      </div>
+	    </div>
+		</div>
+		<!-- US map -->
+		<div class="col-md-9"><center><div id="tooltip-container"></div>
+    <div class="svg" id="canvas-svg"></div></center></div>
+	</div>
+	<div class="row">
+		<!-- Analytics -->
+		<div class="col-lg-12">
+		<div>
+		  <div class="panel panel-primary">
+		  <div class="panel-heading"><h3 class="panel-title">Appearance analytics</h3></div>
+		  <div class="panel-body">
+		  <!-- Nav tabs -->
+		  <ul class="nav nav-tabs" role="tablist">
+		    <li role="presentation" class="active"><a href="#da1" aria-controls="da1" role="tab" data-toggle="tab">Top 5 Cities</a></li>
+		    <li role="presentation"><a href="#da2" aria-controls="da2" role="tab" data-toggle="tab">Period of time</a></li>
+		    <li role="presentation"><a href="#da3" aria-controls="da3" role="tab" data-toggle="tab">Area</a></li>
+		    <li role="presentation"><a href="#da4" aria-controls="da4" role="tab" data-toggle="tab">Atmospheric conditions</a></li>
+		    <li role="presentation"><a href="#da5" aria-controls="da5" role="tab" data-toggle="tab">Top 5 Pokemon appeared before</a></li>
+		    <li role="presentation"><a href="#da6" aria-controls="da6" role="tab" data-toggle="tab">Punch card</a></li>
+		  </ul>
+
+		  <!-- Tab panes -->
+		  <div class="tab-content">
+		    <div role="tabpanel" class="tab-pane active" id="da1">
+                <embed type="image/svg+xml" src= {{ chartDA1|safe }} />
+            </div>
+		    <div role="tabpanel" class="tab-pane" id="da2">
+                <embed type="image/svg+xml" src= {{ chartDA2|safe }} />
+            </div>
+		    <div role="tabpanel" class="tab-pane" id="da3">
+                <embed type="image/svg+xml" src= {{ chartDA3|safe }} />
+            </div>
+		    <div role="tabpanel" class="tab-pane" id="da4">
+                <embed type="image/svg+xml" src= {{ chartDA4|safe }} />
+            </div>
+		    <div role="tabpanel" class="tab-pane" id="da5">
+                <embed type="image/svg+xml" src= {{ chartDA5|safe }} />
+            </div>
+		    <div role="tabpanel" class="tab-pane" id="da6">
+                <embed type="image/svg+xml" src= {{ chartDA6|safe }} />
+            </div>
+		  </div>
+		</div>
+		</div>
+		</div>
+	</div>
+	</div>
+
+</div>
+
+{% include 'includes/footer.html' %}
+
+<!-- US-Map Script -->
+<script type="text/javascript">
+{% with 'db/us-map/'|add:id|add:'.csv' as pokemap %}
+	var main_map_data = "{% static pokemap %}"; /* Change for each Pokemon */
+{% endwith %}
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.1.0/topojson.min.js"></script>
+<script type="text/javascript" src="{% static 'js/us-map.js' %}"></script>
+
+</body>
+</html>
