@@ -145,35 +145,26 @@ body {
 /* Main US Map
 -------------------------------------------------- */
 
-.states {
-  fill: none;
-  stroke: #fff;
-  stroke-linejoin: round;
-}
-
-.states-choropleth {
-  fill: #ccc;
-}
-
-#tooltip-container {
-  position: absolute;
-  background-color: #fff;
-  color: #000;
-  padding: 10px;
-  border: 1px solid;
-  display: none;
-}
-
-.tooltip_key {
-  font-weight: bold;
-}
-
-.tooltip_value {
-  margin-left: 20px;
-  float: right;
-}
 .svg {
 
     overflow-x: auto;
     margin: -20px;
 }
+
+.fill {
+  /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+    height: 100%;
+    width: 100%;
+}
+
+#map-panel {
+    height: 306.9px;
+}
+
+@media (min-width: 1200px) { 
+    #map-panel {
+        height: 330px;
+    }
+}
+
