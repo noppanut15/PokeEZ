@@ -7,7 +7,7 @@
 		<div class="col-md-3">
 			<div class="thumbnail thumbnail-block">
             {% with 'img/pokedex/thumbnail/'|add:id|add:'.png' as pokeimage %}
-	      <a href="analytic.html"><img src="{% static pokeimage %}"></a>
+	      <img src="{% static pokeimage %}">
             {% endwith %}
 	      <div class="caption thumbnail-badge">
 	      	<p class="id-label"># {{id}}</p>
