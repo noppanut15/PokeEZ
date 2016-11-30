@@ -16,64 +16,179 @@
 		</p>
 	</div>
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-md-4">
 		<div class="thumbnail">
-		  <img src="{% static 'img/app/DA1.png' %}">
+		  <a href="#DA1"><img src="{% static 'img/app/DA1.png' %}" data-toggle="modal" data-target="#DA1"></a>
 		  <div class="caption">
-		    <h3 align="center">เมืองที่พบมากที่สุด</h3>
+		    <h4 align="center">เมืองที่พบมากที่สุด</h4>
 		  </div>
 		</div>
 		</div>
-		<div class="col-md-6">
+		<div class="col-md-4">
 		<div class="thumbnail">
-		  <img src="{% static 'img/app/DA2.png' %}">
+		  <a href="#DA2"><img src="{% static 'img/app/DA2.png' %}" data-toggle="modal" data-target="#DA2"></a>
 		  <div class="caption">
-		    <h3 align="center">ช่วงเวลาที่พบ</h3>
+		    <h4 align="center">ช่วงเวลาที่พบ</h4>
 		  </div>
 		</div>
 		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-6">
+		<div class="col-md-4">
 		<div class="thumbnail">
-		  <img src="{% static 'img/app/DA3.png' %}">
+		  <a href="#DA3"><img src="{% static 'img/app/DA3.png' %}" data-toggle="modal" data-target="#DA3"></a>
 		  <div class="caption">
-		    <h3 align="center">ในเมือง - นอกเมือง</h3>
-		  </div>
-		</div>
-		</div>
-		<div class="col-md-6">
-		<div class="thumbnail">
-		  <img src="{% static 'img/app/DA4.png' %}">
-		  <div class="caption">
-		    <h3 align="center">สภาพอากาศ</h3>
+		    <h4 align="center">ในเมือง - นอกเมือง</h4>
 		  </div>
 		</div>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-md-4">
 		<div class="thumbnail">
-		  <img src="{% static 'img/app/DA5.png' %}">
+		  <a href="#DA4"><img src="{% static 'img/app/DA4.png' %}" data-toggle="modal" data-target="#DA4"></a>
 		  <div class="caption">
-		    <h3 align="center">โปเกม่อนที่ปรากฎก่อนหน้า</h3>
+		    <h4 align="center">สภาพอากาศ</h4>
 		  </div>
 		</div>
 		</div>
-		<div class="col-md-6">
+		<div class="col-md-4">
 		<div class="thumbnail">
-		  <img src="{% static 'img/app/DA6.png' %}">
+		  <a href="#DA5"><img src="{% static 'img/app/DA5.png' %}" data-toggle="modal" data-target="#DA5"></a>
 		  <div class="caption">
-		    <h3 align="center">วันและเวลาที่พบ</h3>
+		    <h4 align="center">โปเกม่อนที่ปรากฎก่อนหน้า</h4>
+		  </div>
+		</div>
+		</div>
+		<div class="col-md-4">
+		<div class="thumbnail">
+		  <a href="#DA6"><img src="{% static 'img/app/DA6.png' %}" data-toggle="modal" data-target="#DA6"></a>
+		  <div class="caption">
+		    <h4 align="center">วันและเวลาที่พบ</h4>
 		  </div>
 		</div>
 		</div>
 	</div>
+
+	<!-- Modal DA1 -->
+	<div class="modal fade" id="DA1" tabindex="-1" role="dialog">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title">เมืองที่พบมากที่สุด</h4>
+	      </div>
+	      <div class="modal-body">
+	        <div>
+			  <img src="{% static 'img/app/DA1.png' %}" style="width: 100%;">
+			</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- Modal DA2 -->
+	<div class="modal fade" id="DA2" tabindex="-1" role="dialog">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title">ช่วงเวลาที่พบ</h4>
+	      </div>
+	      <div class="modal-body">
+	        <div>
+			  <img src="{% static 'img/app/DA2.png' %}" style="width: 100%;">
+			</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- Modal DA3 -->
+	<div class="modal fade" id="DA3" tabindex="-1" role="dialog">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title">ในเมือง - นอกเมือง</h4>
+	      </div>
+	      <div class="modal-body">
+	        <div>
+			  <img src="{% static 'img/app/DA3.png' %}" style="width: 100%;">
+			</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- Modal DA4 -->
+	<div class="modal fade" id="DA4" tabindex="-1" role="dialog">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title">สภาพอากาศ</h4>
+	      </div>
+	      <div class="modal-body">
+	        <div>
+			  <img src="{% static 'img/app/DA4.png' %}" style="width: 100%;">
+			</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- Modal DA5 -->
+	<div class="modal fade" id="DA5" tabindex="-1" role="dialog">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title">โปเกม่อนที่ปรากฎก่อนหน้า</h4>
+	      </div>
+	      <div class="modal-body">
+	        <div>
+			  <img src="{% static 'img/app/DA5.png' %}" style="width: 100%;">
+			</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- Modal DA6 -->
+	<div class="modal fade" id="DA6" tabindex="-1" role="dialog">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title">วันและเวลาที่พบ</h4>
+	      </div>
+	      <div class="modal-body">
+	        <div>
+			  <img src="{% static 'img/app/DA6.png' %}" style="width: 100%;">
+			</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
 	<div class="row">
 		<p class="overview-p">
-
+			โดยจากการศึกษา
 		</p>
 	</div>
+
 </div>
 
 {% include 'includes/footer.html' %}
