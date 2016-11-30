@@ -7,7 +7,7 @@
 		<div class="col-md-3">
 			<div class="thumbnail thumbnail-block">
             {% with 'img/pokedex/thumbnail/'|add:id|add:'.png' as pokeimage %}
-	      <a href="analytic.html"><img src="{% static pokeimage %}"></a>
+	      <img src="{% static pokeimage %}">
             {% endwith %}
 	      <div class="caption thumbnail-badge">
 	      	<p class="id-label"># {{id}}</p>
@@ -18,9 +18,13 @@
 	      </div>
 	    </div>
 		</div>
-		<!-- US map -->
-		<div class="col-md-9"><center><div id="tooltip-container"></div>
-    <div class="svg" id="canvas-svg"></div></center></div>
+		<!-- Pokemon heatmap -->
+		<div class="col-md-9">
+		<div class="panel panel-default" id="map-panel">
+			<div class="panel-body fill">
+			<div id="map" class="fill"></div>
+		</div></div>
+		</div>
 	</div>
 	<div class="row">
 		<!-- Analytics -->
@@ -72,13 +76,13 @@
 
 <!-- US-Map Script -->
 <script type="text/javascript">
-{% with 'db/us-map/'|add:id|add:'.csv' as pokemap %}
-	var main_map_data = "{% static pokemap %}"; /* Change for each Pokemon */
+{% with 'db/location/'|add:id|add:'.json' as pokemap %}
+	var poke_map_json = "{% static pokemap %}"; /* Change for each Pokemon */
 {% endwith %}
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.1.0/topojson.min.js"></script>
-<script type="text/javascript" src="{% static 'js/us-map.js' %}"></script>
-
+<script type="text/javascript" src="{% static 'js/poke-map.js' %}"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtCvURd8KX3paKc3V_94u3x7DeU3UxM2E&libraries=visualization&callback=initMap">
+    </script>
 </body>
 </html>
