@@ -174,3 +174,6 @@ body {
 .header-small {
     margin-top: -10px;
 }
+.overview-p {
+  line-height: 1.7em;
+}
