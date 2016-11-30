@@ -5,6 +5,7 @@ import os
 
 def index(request):
     context = {
+        'nav_overview': '',
         'nav_pokedex': '',
         'nav_about': '',
     }
@@ -16,6 +17,7 @@ def pokedex(request):
     with open(file_path) as data_file:
         data = json.load(data_file)
     context = {
+        'nav_overview': '',
         'nav_pokedex': 'active',
         'nav_about': '',
         'infos': sorted(data.items()),
@@ -24,10 +26,19 @@ def pokedex(request):
 
 def about(request):
     context = {
+        'nav_overview': '',
         'nav_pokedex': '',
         'nav_about': 'active',
     }
     return render(request, 'about-us.html', context)
+
+def overview(request):
+    context = {
+        'nav_overview': 'active',
+        'nav_pokedex': '',
+        'nav_about': '',
+    }
+    return render(request, 'overview.html', context)
 
 def search_by_name(request):
     try:
