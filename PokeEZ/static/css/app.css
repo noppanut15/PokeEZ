@@ -175,5 +175,16 @@ body {
     margin-top: -10px;
 }
 .overview-p {
-  line-height: 1.7em;
+    line-height: 1.7em;
+}
+.big-icon {
+    text-align: center;
+    font-size: 4em;
+    margin-bottom: 25px;
+}
+.fa {
+    color: #222;
+}
+.fa-github{
+    margin-left: 20px;
 }

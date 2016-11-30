@@ -210,20 +210,33 @@
 		<p class="overview-p">
 			จากแผนภูมิข้างต้นแสดง 5 อันดับโปเกม่อนที่หายากที่สุด โดยพบว่า <a href="{% url 'analytic:detail' '089' %}">Muk</a> เป็นโปเกม่อนที่หายากที่สุด เนื่องจากมีจำนวนครั้งที่พบใน Dataset น้อยที่สุด (1 ครั้ง) รองลงมาเป็น <a href="{% url 'analytic:detail' '141' %}">Kabutops</a> (2 ครั้ง), <a href="{% url 'analytic:detail' '137' %}">Porygon</a> (3 ครั้ง), <a href="{% url 'analytic:detail' '094' %}">Gengar</a> (3 ครั้ง) และ <a href="{% url 'analytic:detail' '139' %}">Omastar</a> (4 ครั้ง) ตามลำดับ
 		</p>
-		<p class="overview-p">อีกทั้งยังสามารถวิเคราะห์เจาะลึกถึงรายละเอียดเพื่อศึกษาตัวแปรในการเกิดโปเกม่อนหายากขึ้น โดยสรุปผลการวิเคราะห์ได้เป็นดังนี้</p>
+	</div>
+	<div class="row">
+		<div class="well">
+		<p class="overview-p">อนึ่ง สามารถวิเคราะห์เจาะลึกถึงรายละเอียดเพื่อศึกษาตัวแปรในการปรากฎของโปเกม่อนที่หาได้ยาก โดยสรุปผลการวิเคราะห์ได้เป็นดังนี้</p>
 		<p class="overview-p">
-			<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> ตำแหน่งเมืองที่สามารถตามหาโปเกม่อนหายากได้ โดย 5 อันดับเมืองที่พบโปเกม่อนหายากที่สุด ได้แก่  Los Angeles (27.27%), Denver (18.18%), Edmonton (18.18%), New York (18.18%) และ Toronto (18.18%) ตามลำดับ
+			<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> ตำแหน่งเมืองที่พบโปเกม่อนหายาก โดย 5 อันดับเมืองที่พบโปเกม่อนหายากที่สุด ได้แก่  Los Angeles (27.27%), Denver (18.18%), Edmonton (18.18%), New York (18.18%) และ Toronto (18.18%) ตามลำดับ
 		</p>
 		<p><span class="glyphicon glyphicon-time" aria-hidden="true"></span> ช่วงเวลาที่เจอโปเกม่อนหายากมากที่สุดคือช่วงเวลากลางคืน (คิดเป็น 72.73%)</p>
 		<p><span class="glyphicon glyphicon-road" aria-hidden="true"></span> พื้นที่ที่พบโปเกม่อนหายากมากที่สุดคือบริเวณในเมือง (คิดเป็น 89.58%)</p>
 		<p><span class="glyphicon glyphicon-cloud" aria-hidden="true"></span> สภาพอากาศที่พบโปเกม่อนหายากมากที่สุดคือช่วงอากาศแจ่มใส (45.45%) รองลงมาเป็นช่วงที่มีเมฆเป็นบางส่วน (27.27%), ฝนตก (18.18%) และมีเมฆมาก (9.09%)</p>
-		<p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> หากพบ <a href="{% url 'analytic:detail' '096' %}">Drowzee</a> ปรากฎกายขึ้น หลังจากนั้นก็จะพบโปเกม่อนหายาก (คิดเป็น 18.75%) หรือหากพบ <a href="{% url 'analytic:detail' '116' %}">Horsea, <a href="{% url 'analytic:detail' '064' %}">Kadabra</a>, <a href="{% url 'analytic:detail' '129' %}">Magikarp</a>, <a href="{% url 'analytic:detail' '128' %}">Tauros</a> ก็จะมีโอกาสพบโปเกม่อนหายากรองลงมาเป็น 12.50%</p>
-		<p>ดังนั้น หากต้องการที่จะเข้าถึงโปเกม่อนหายาก ควรที่จะหาที่เมือง Los Angeles บริเวณในเมือง ในช่วงเวลากลางคืน และสภาพอากาศแจ่มใส</p>
+		<p><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> หากพบ <a href="{% url 'analytic:detail' '096' %}">Drowzee</a> ปรากฎกายขึ้น หลังจากนั้นก็จะมีโอกาสพบโปเกม่อนหายาก (คิดเป็น 18.75%) หรือหากพบ <a href="{% url 'analytic:detail' '116' %}">Horsea, <a href="{% url 'analytic:detail' '064' %}">Kadabra</a>, <a href="{% url 'analytic:detail' '129' %}">Magikarp</a>, <a href="{% url 'analytic:detail' '128' %}">Tauros</a> ก็จะมีโอกาสพบโปเกม่อนหายากรองลงมาเป็นอย่างละ 12.50%</p>
+		<p>ดังนั้น หากต้องการที่จะเข้าถึงโปเกม่อนหายาก ควรที่จะเข้าถึงที่เมือง Los Angeles บริเวณในเมือง ในช่วงเวลากลางคืน และสภาพอากาศแจ่มใส</p>
+		</div>
+	</div>
+	<div class="big-icon">
+		<a href="#" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true" data-toggle="tooltip" data-placement="left" title="View Presentation on Youtube"></i></a>  
+		<a href="https://github.com/noppanut15/PokeEZ" target="_blank"><i class="fa fa-github" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="View source code on GitHub""></i></a>
+
 	</div>
 </div>
 
 {% include 'includes/footer.html' %}
-
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
 
 </body>
 </html>
