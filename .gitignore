@@ -1,4 +1,3 @@
 *.pyc
-pygal/
 PokeEZ/__pycache__/
 analytic/__pycache__/
