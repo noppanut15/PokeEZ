@@ -70,76 +70,76 @@ body {
 /* Pokedex Type
 -------------------------------------------------- */
 .background-color-bug {
-    background: #729f3f linear-gradient(180deg, #729f3f 50%, #729f3f 50%) repeat scroll 0 0;
-    color: #fff;
+  background: #729f3f linear-gradient(180deg, #729f3f 50%, #729f3f 50%) repeat scroll 0 0;
+  color: #fff;
 }
 .background-color-dark {
-    background: #707070 linear-gradient(180deg, #707070 50%, #707070 50%) repeat scroll 0 0;
-    color: #fff;
+  background: #707070 linear-gradient(180deg, #707070 50%, #707070 50%) repeat scroll 0 0;
+  color: #fff;
 }
 .background-color-dragon {
-    background: #53a4cf linear-gradient(180deg, #53a4cf 50%, #f16e57 50%) repeat scroll 0 0;
-    color: #fff;
+  background: #53a4cf linear-gradient(180deg, #53a4cf 50%, #f16e57 50%) repeat scroll 0 0;
+  color: #fff;
 }
 .background-color-electric {
-    background: #eed535 linear-gradient(180deg, #eed535 50%, #eed535 50%) repeat scroll 0 0;
-    color: #212121;
+  background: #eed535 linear-gradient(180deg, #eed535 50%, #eed535 50%) repeat scroll 0 0;
+  color: #212121;
 }
 .background-color-fairy {
-    background: #fdb9e9 linear-gradient(180deg, #fdb9e9 50%, #fdb9e9 50%) repeat scroll 0 0;
-    color: #212121;
+  background: #fdb9e9 linear-gradient(180deg, #fdb9e9 50%, #fdb9e9 50%) repeat scroll 0 0;
+  color: #212121;
 }
 .background-color-fighting {
-    background: #d56723 linear-gradient(180deg, #d56723 50%, #d56723 50%) repeat scroll 0 0;
-    color: #fff;
+  background: #d56723 linear-gradient(180deg, #d56723 50%, #d56723 50%) repeat scroll 0 0;
+  color: #fff;
 }
 .background-color-fire {
-    background: #fd7d24 linear-gradient(180deg, #fd7d24 50%, #fd7d24 50%) repeat scroll 0 0;
-    color: #fff;
+  background: #fd7d24 linear-gradient(180deg, #fd7d24 50%, #fd7d24 50%) repeat scroll 0 0;
+  color: #fff;
 }
 .background-color-flying {
-    background: #3dc7ef linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%) repeat scroll 0 0;
-    color: #212121;
+  background: #3dc7ef linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%) repeat scroll 0 0;
+  color: #212121;
 }
 .background-color-ghost {
-    background: #7b62a3 linear-gradient(180deg, #7b62a3 50%, #7b62a3 50%) repeat scroll 0 0;
-    color: #fff;
+  background: #7b62a3 linear-gradient(180deg, #7b62a3 50%, #7b62a3 50%) repeat scroll 0 0;
+  color: #fff;
 }
 .background-color-grass {
-    background: #9bcc50 linear-gradient(180deg, #9bcc50 50%, #9bcc50 50%) repeat scroll 0 0;
-    color: #212121;
+  background: #9bcc50 linear-gradient(180deg, #9bcc50 50%, #9bcc50 50%) repeat scroll 0 0;
+  color: #212121;
 }
 .background-color-ground {
-    background: #f7de3f linear-gradient(180deg, #f7de3f 50%, #ab9842 50%) repeat scroll 0 0;
-    color: #212121;
+  background: #f7de3f linear-gradient(180deg, #f7de3f 50%, #ab9842 50%) repeat scroll 0 0;
+  color: #212121;
 }
 .background-color-ice {
-    background: #51c4e7 linear-gradient(180deg, #51c4e7 50%, #51c4e7 50%) repeat scroll 0 0;
-    color: #212121;
+  background: #51c4e7 linear-gradient(180deg, #51c4e7 50%, #51c4e7 50%) repeat scroll 0 0;
+  color: #212121;
 }
 .background-color-normal {
-    background: #a4acaf linear-gradient(180deg, #a4acaf 50%, #a4acaf 50%) repeat scroll 0 0;
-    color: #212121;
+  background: #a4acaf linear-gradient(180deg, #a4acaf 50%, #a4acaf 50%) repeat scroll 0 0;
+  color: #212121;
 }
 .background-color-poison {
-    background: #b97fc9 linear-gradient(180deg, #b97fc9 50%, #b97fc9 50%) repeat scroll 0 0;
-    color: #fff;
+  background: #b97fc9 linear-gradient(180deg, #b97fc9 50%, #b97fc9 50%) repeat scroll 0 0;
+  color: #fff;
 }
 .background-color-psychic {
-    background: #f366b9 linear-gradient(180deg, #f366b9 50%, #f366b9 50%) repeat scroll 0 0;
-    color: #fff;
+  background: #f366b9 linear-gradient(180deg, #f366b9 50%, #f366b9 50%) repeat scroll 0 0;
+  color: #fff;
 }
 .background-color-rock {
-    background: #a38c21 linear-gradient(180deg, #a38c21 50%, #a38c21 50%) repeat scroll 0 0;
-    color: #fff;
+  background: #a38c21 linear-gradient(180deg, #a38c21 50%, #a38c21 50%) repeat scroll 0 0;
+  color: #fff;
 }
 .background-color-steel {
-    background: #9eb7b8 linear-gradient(180deg, #9eb7b8 50%, #9eb7b8 50%) repeat scroll 0 0;
-    color: #212121;
+  background: #9eb7b8 linear-gradient(180deg, #9eb7b8 50%, #9eb7b8 50%) repeat scroll 0 0;
+  color: #212121;
 }
 .background-color-water {
-    background: #4592c4 linear-gradient(180deg, #4592c4 50%, #4592c4 50%) repeat scroll 0 0;
-    color: #fff;
+  background: #4592c4 linear-gradient(180deg, #4592c4 50%, #4592c4 50%) repeat scroll 0 0;
+  color: #fff;
 }
 
 /* Main US Map
@@ -147,44 +147,62 @@ body {
 
 .svg {
 
-    overflow-x: auto;
-    margin: -20px;
+  overflow-x: auto;
+  margin: -20px;
 }
 
 .fill {
   /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-    height: 100%;
-    width: 100%;
+     * element that contains the map. */
+  height: 100%;
+  width: 100%;
 }
 
 #map-panel {
-    height: 306.9px;
+  height: 306.9px;
 }
 
 @media (min-width: 1200px) { 
-    #map-panel {
-        height: 330px;
-    }
+  #map-panel {
+    height: 330px;
+  }
 }
 
 /* Overview Page
 -------------------------------------------------- */
 
 .header-small {
-    margin-top: -10px;
+  margin-top: -10px;
 }
 .overview-p {
-    line-height: 1.7em;
+  line-height: 1.7em;
 }
 .big-icon {
-    text-align: center;
-    font-size: 4em;
-    margin-bottom: 25px;
+  text-align: center;
+  font-size: 4em;
+  margin-bottom: 25px;
 }
 .fa {
-    color: #222;
+  color: #222;
 }
 .fa-github{
-    margin-left: 20px;
+  margin-left: 20px;
+}
+
+/* About-Us Page
+-------------------------------------------------- */
+.team-pic {
+  padding: 20px;
+}
+
+.team-pic img {
+  width: 100%;
+}
+
+.team-pic > h3, .team-pic > p {
+  text-align: center;
+}
+
+.team-pic > h3 {
+  font-size: 1.5em;
 }
