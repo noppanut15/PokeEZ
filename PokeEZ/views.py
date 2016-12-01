@@ -43,7 +43,7 @@ def overview(request):
 def search_by_name(request):
     try:
         if request.method == 'POST':
-            pokemon_name = request.POST['pokename']
+            pokemon_name = request.POST['pokename'].strip()
             module_dir = os.path.dirname(__file__)  # get current directory
             file_path = os.path.join(module_dir, 'static/db/pokename_to_id.json')
             with open(file_path) as data_file:
