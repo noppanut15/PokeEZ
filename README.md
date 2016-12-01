@@ -10,7 +10,7 @@ PokeEZ is a web application that shows statistics of each Pokemon appeared in th
 
 
 ### Run Server
-1. Run command
+Run command
 ```
 # Default port is 8000 and online on http://localhost/
 python pokeez.py runserver <port>
@@ -18,8 +18,11 @@ python pokeez.py runserver <port>
 
 ### Data Analysis
 Source code: `/__data_analysis__/py_fetch`
+
 Raw Output in JSON: `/__data_analysis__/py_output_json`
+
 Filename explanation:
+
 1. `DA0` => Collect position data from raw CSV to each pokemon's collection in JSON. (For Google Heatmap in analytic page: `/analytic/xxx`)
 2. `DA1` => Found in top 5 Cities (in times)
 3. `DA2` => Time of the day of a sighting (in %)
