@@ -16,7 +16,7 @@ Run command
 python pokeez.py runserver <port>
 ```
 
-### Data Analysis
+## Data Analysis
 Source code directory: `/__data_analysis__/py_fetch`
 
 Raw output directory: `/__data_analysis__/py_output_json`
@@ -34,7 +34,7 @@ Filename explanation:
 9. `OW0` => Collect all position records in to one JSON file. (For visualization in a Overview page `/overview`)
 10. `OW1` => Find Top 5 Min-Max Population. (For visualization in a Overview page `/overview`)
 
-### Special Thanks
+## Special Thanks
 
 1. Kaggle (https://www.kaggle.com/semioniy/predictemall)
 2. Bootstrap (http://getbootstrap.com)
