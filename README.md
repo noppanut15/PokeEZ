@@ -17,9 +17,9 @@ python pokeez.py runserver <port>
 ```
 
 ### Data Analysis
-Source code: `/__data_analysis__/py_fetch`
+Source code directory: `/__data_analysis__/py_fetch`
 
-Raw Output in JSON: `/__data_analysis__/py_output_json`
+Raw output directory: `/__data_analysis__/py_output_json`
 
 Filename explanation:
 
