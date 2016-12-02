@@ -25,7 +25,7 @@ SECRET_KEY = 'w(&!-3pkaxkg#bil5#29gn5z795lg*&8g*nty#j*+1ng2$7b2p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['pokeez.iikjii.me']
 
 
 # Application definition
