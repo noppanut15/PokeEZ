@@ -184,9 +184,7 @@ body {
 }
 .fa {
   color: #222;
-}
-.fa-github{
-  margin-left: 20px;
+  margin: 0 10px 0 10px;
 }
 
 /* About-Us Page
